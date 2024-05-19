@@ -1,4 +1,8 @@
+#!/usr/bin/python3
+
 def magic_calculation(a, b):
+    """ function that print python byte code """
+
     add, sub = magic_calculation_102.add, magic_calculation_102.sub
 
     if a < b:
@@ -8,4 +12,3 @@ def magic_calculation(a, b):
         return c
     else:
         return sub(a, b)
-
