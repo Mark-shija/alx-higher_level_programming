@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-from add_0 import add
 
 def main():
+    from add_0 import add
     """ main calls module func
 
     Args:
