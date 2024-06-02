@@ -1,7 +1,7 @@
 ### 0x03. Python - Data Structures: Lists, Tuples
 
-published by: Maxius(Mark) Shija
-Date: 02 June 2024
+* published by: Maxius(Mark) Shija
+* Date: 02 June 2024
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
