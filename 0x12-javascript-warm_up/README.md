@@ -1,10 +1,9 @@
 ## 0x12. JavaScript - Warm up
-Published by: Maxius(Mark Shija)
-Published Date: 18 June 2024
+* Published by: Maxius(Mark Shija)
+* Published Date: 18 June 2024
 
 # Javascript Warm Up concepts
 ## Learning Objectives
-- At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 ## General
 	- Why JavaScript programming is amazing
