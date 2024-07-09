@@ -1,29 +1,29 @@
 #!/usr/bin/python3
 
 
-def find_peak(lst_of_integers):
+def find_peak(list_of_integers):
 
-    if lst_of_integers is None or len(lst_of_integers) == 0:
+    if list_of_integers is None or len(list_of_integers) == 0:
         return None
 
-    if len(lst_of_integers) == 1:
-        return lst_of_integers[0]
+    if len(list_of_integers) == 1:
+        return list_of_integers[0]
 
-    idx = int(len(lst_of_integers) / 2)
+    mid_idx = int(len(list_of_integers) / 2)
 
-    if idx != len(lst_of_integers) - 1:
-        if lst_of_integers[idx - 1] < lst_of_integers[idx] and\
-           lst_of_integers[idx + 1] < lst_of_integers[idx]:
-            return lst_of_integers[idx]
+    if mid_idx != len(list_of_integers) - 1:
+        if list_of_integers[mid_idx - 1] < list_of_integers[mid_idx] and\
+           list_of_integers[mid_idx + 1] < list_of_integers[mid_idx]:
+            return list_of_integers[mid_idx]
     else:
-        if lst_of_integers[idx - 1] < lst_of_integers[idx]:
-            return lst_of_integers[idx]
+        if list_of_integers[mid_idx - 1] < list_of_integers[mid_idx]:
+            return list_of_integers[mid_idx]
         else:
-            return lst_of_integers[idx - 1]
+            return list_of_integers[mid_idx - 1]
 
-    if lst_of_integers[idx - 1] > lst_of_integers[idx]:
-        a_list = lst_of_integers[0:idx]
+    if list_of_integers[mid_idx - 1] > list_of_integers[mid_idx]:
+        new_list = list_of_integers[0:mid_idx]
     else:
-        a_list = lst_of_integers[idx + 1:]
+        new_list = list_of_integers[mid_idx + 1:]
 
-    return find_peak(a_list)
+    return find_peak(new_list)
